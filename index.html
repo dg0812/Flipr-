@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for dark mode */
+        #blog {
+            letter-spacing: 3rem;
+            font-weight: 900;
+            font-stretch: 200%;
+        }
+
+        .dark-mode * {
+            background-color: #1a202c;
+            color: #e2e8f0;
+        }
+
+        /* Hide all cards by default */
+        .card {
+            display: none;
+        }
+
+        /* Pagination buttons */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .pagination button {
+            background-color: #4a5568;
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .pagination button.active {
+            background-color: #2d3748;
+            font-weight: bold;
+        }
+        #card1{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            
+        }
+        #card4{
+           
+            grid-column: 1/4;
+        }
+    </style>
+</head>
+
+<body class="bg-white font-sans">
+    <div class="container mx-auto p-4">
+        <!-- Navigation -->
+        <nav class="text-black font-semibold p-4 mb-8 rounded-md flex items-center justify-between">
+            <span>Your name</span>
+            <ul class="flex space-x-6">
+                <li class="nav-item">Blog</li>
+                <li class="nav-item">Project</li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Newsletter</li>
+                <button id="darkModeToggle" class="nav-button"><img class="h-10" src="./6.png" alt=""></button>
+            </ul>
+        </nav>
+
+        <!-- Blog Header -->
+        <div class="text-center mb-8">
+            <h1 id="blog" class="text-[20vh] font-bold">THE BLOG</h1>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid  grid-cols md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div id="card1"  class="card " >
+                <p class="font-semibold mb-2">Recent blog posts</p>
+                <img src="./cardimage/Image.svg" alt="" class=" h-48 object-cover mb-4">
+                <p class="text-sm text-gray-600">Olivia Rhyc - 1 Jan 2023</p>
+                <h1 class="text-xl font-bold mb-2">UX Review Presentations</h1>
+                <p class="text-gray-700 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo non incidunt voluptate voluptates provident eveniet autem totam necessitatibus ips. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, delectus!</p>
+                <div class="flex space-x-2">
+                    <button class="nav-button">Design</button>
+                    <button class="nav-button">Research</button>
+                    <button class="nav-button">Presentations</button>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+          
+
+
+<div>
+    
+ <!-- Card 2 -->
+ <div class="card">
+    <img src="./cardimage/Image-1.svg" alt="" class="w-full h-20 object-cover mb-4">
+    <p class="text-sm text-gray-600">Phopnex Ranmketrt - 1 Uan 4501203</p>
+    <h1 class="text-md font-bold mb-2">Mihqaratdfidlfnt o Luinwerae</h1>
+    <p class="text-gray-700 mb-2"> reiciendis? Quia, tempora repellendus quis magni consequatur sapiente!</p>
+    <div class="flex space-x-2">
+        <button class="nav-button">Desufgn</button>
+        <button class="nav-button">Researdhujj</button>
+    </div>
+</div>
+
+<!-- Card 3 -->
+<div class="card">
+    <img src="./cardimage/Image-2.svg" alt="" class="w-full h-20 object-cover mb-4">
+    <p class="text-sm text-gray-600">Phopnex Ranmketrt - 1 Uan 4501203</p>
+    <h1 class="text-xl font-bold mb-2">Mihqaratdfidlfnt o Luinwerae</h1>
+    <p class="text-gray-700 mb-4"> tempora repellendus quis magni consequatur sapiente!</p>
+    <div class="flex space-x-2">
+        <button class="nav-button">Desufgn</button>
+        <button class="nav-button">Researdhujj</button>
+    </div>
+</div>
+</div>
+
+<!-- Card 4 -->
+<div class="card flex items-start space-x-4" id="card4">
+    <!-- Image -->
+    <span class="w-[50%]">
+        <img src="./cardimage/Image-3.svg" alt="" class="w-full h-40 object-cover">
+    </span>
+    
+    <!-- Text content -->
+    <span class="w-[50%]">
+        <p class="text-sm text-gray-600">Phopnex Ranmketrt - 1 Uan 4501203</p>
+        <h1 class="text-xl font-bold mb-2">Mihqaratdfidlfnt o Luinwerae</h1>
+        <p class="text-gray-700 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae cumque modi officiis reiciendis? Quia, tempora repellendus quis magni consequatur sapiente!</p>
+        <div class="flex space-x-2">
+            <button class="nav-button">Desufgn</button>
+            <button class="nav-button">Researdhujj</button>
+        </div>
+    </span>
+</div>
+
+
+<!-- Additional Cards (repeated structure) -->
+
+<div class="card">
+    <p class="font-semibold mb-2">Recent blog posts</p>
+    <img src="./cardimage/Image-4.svg" alt="" class="w-full h-40 object-cover mb-4">
+    <p class="text-sm text-gray-600">Olivia Rhyc - 1 Jan 2023</p>
+    <h1 class="text-xl font-bold mb-2">UX Review Presentations</h1>
+    <p class="text-gray-700 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo non incidunt voluptate voluptates provident eveniet autem totam necessitatibus ips.</p>
+    <div class="flex space-x-2">
+        <button class="nav-button">Design</button>
+        <button class="nav-button">Research</button>
+        <button class="nav-button">Presentations</button>
+    </div>
+</div>
+
+
+
+
+
+<div class="card">
+    <p class="font-semibold mb-2">Recent blog posts</p>
+    <img src="./cardimage/Image-5.svg" alt="" class="w-full h-40 object-cover mb-4">
+    <p class="text-sm text-gray-600">Olivia Rhyc - 1 Jan 2023</p>
+    <h1 class="text-xl font-bold mb-2">UX Review Presentations</h1>
+    <p class="text-gray-700 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo non incidunt voluptate voluptates provident eveniet autem totam necessitatibus ips.</p>
+    <div class="flex space-x-2">
+        <button class="nav-button">Design</button>
+        <button class="nav-button">Research</button>
+        <button class="nav-button">Presentations</button>
+    </div>
+</div>
+
+<!-- More cards can be added here following the same structure -->
+
+<div class="card">
+    <p class="font-semibold mb-2">Recent blog posts</p>
+    <img src="./cardimage/Image-6.svg" alt="" class="w-full h-40 object-cover mb-4">
+    <p class="text-sm text-gray-600">Olivia Rhyc - 1 Jan 2023</p>
+    <h1 class="text-xl font-bold mb-2">UX Review Presentations</h1>
+    <p class="text-gray-700 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo non incidunt voluptate voluptates provident eveniet autem totam necessitatibus ips.</p>
+    <div class="flex space-x-2">
+        <button class="nav-button">Design</button>
+        <button class="nav-button">Research</button>
+        <button class="nav-button">Presentations</button>
+    </div>
+</div>
+
+
+
+
+<div class="card">
+    <p class="font-semibold mb-2">Recent blog posts</p>
+    <img src="./cardimage/Image-7.svg" alt="" class="w-full h-40 object-cover mb-4">
+    <p class="text-sm text-gray-600">Olivia Rhyc - 1 Jan 2023</p>
+    <h1 class="text-xl font-bold mb-2">UX Review Presentations</h1>
+    <p class="text-gray-700 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo non incidunt voluptate voluptates provident eveniet autem totam necessitatibus ips.</p>
+    <div class="flex space-x-2">
+        <button class="nav-button">Design</button>
+        <button class="nav-button">Research</button>
+        <button class="nav-button">Presentations</button>
+    </div>
+</div>
+
+
+
+
+
+<div class="card">
+    <p class="font-semibold mb-2">Recent blog posts</p>
+    <img src="./cardimage/Image-8.svg" alt="" class="w-full h-40 object-cover mb-4">
+    <p class="text-sm text-gray-600">Olivia Rhyc - 1 Jan 2023</p>
+    <h1 class="text-xl font-bold mb-2">UX Review Presentations</h1>
+    <p class="text-gray-700 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo non incidunt voluptate voluptates provident eveniet autem totam necessitatibus ips.</p>
+    <div class="flex space-x-2">
+        <button class="nav-button">Design</button>
+        <button class="nav-button">Research</button>
+        <button class="nav-button">Presentations</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+    <p class="font-semibold mb-2">Recent blog posts</p>
+    <img src="./cardimage/Image-9.svg" alt="" class="w-full h-40 object-cover mb-4">
+    <p class="text-sm text-gray-600">Olivia Rhyc - 1 Jan 2023</p>
+    <h1 class="text-xl font-bold mb-2">UX Review Presentations</h1>
+    <p class="text-gray-700 mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo non incidunt voluptate voluptates provident eveniet autem totam necessitatibus ips.</p>
+    <div class="flex space-x-2">
+        <button class="nav-button">Design</button>
+        <button class="nav-button">Research</button>
+        <button class="nav-button">Presentations</button>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination">
+            <button class="pagination-btn" data-page="1">1</button>
+            <button class="pagination-btn" data-page="2">2</button>
+            <button class="pagination-btn" data-page="3">3</button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-8 p-4 bg-gray-800 text-white text-center rounded-md">
+            <p>2023 Twitwewer linkwni w, AJUIIOL IRSS FEED ADD TO FEED</p>
+        </footer>
+    </div>
+
+    <script>
+        const cardsPerPage = 10; // Number of cards per page
+        const cards = document.querySelectorAll('.card'); // All cards
+        const totalPages = Math.ceil(cards.length / cardsPerPage); // Total number of pages
+        const paginationBtns = document.querySelectorAll('.pagination-btn');
+
+        // Function to show cards for the current page
+        function showPage(page) {
+            // Hide all cards
+            cards.forEach((card, index) => {
+                card.style.display = 'none';
+            });
+
+            // Calculate the range of cards to show
+            const start = (page - 1) * cardsPerPage;
+            const end = start + cardsPerPage;
+
+            // Show the relevant cards
+            cards.forEach((card, index) => {
+                if (index >= start && index < end) {
+                    card.style.display = 'block';
+                }
+            });
+
+            // Set active class for pagination buttons
+            paginationBtns.forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`.pagination-btn[data-page="${page}"]`).classList.add('active');
+        }
+
+        // Add event listeners to pagination buttons
+        paginationBtns.forEach(btn => {
+            btn.addEventListener('click', function () {
+                const page = parseInt(this.getAttribute('data-page'));
+                showPage(page);
+            });
+        });
+
+        // Show the first page by default
+        showPage(1);
+
+        // Dark mode toggle
+        document.getElementById('darkModeToggle').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>
